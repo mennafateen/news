@@ -4,9 +4,8 @@
     src: url(../fonts/Lato-Semibold.ttf) format('truetype');
 }
 
-<<<<<<< HEAD
 /*    error 404 page     */
-=======
+
 @font-face {
     font-family: 'latolight';
     src: local('Lato');
@@ -25,10 +24,10 @@
     src: url(../fonts/Lato-Thin.ttf) format('truetype');
 }
 
-=======
+
 
 /* error 404 page */
->>>>>>> 8768fa753f42bbbc48a71a3dbc13d0baa504170d
+
 
 /* for button */
 .red-background {background-color:rgb(201, 48, 52);}
@@ -72,7 +71,7 @@
     /*   ^ make navbar background transparent with gradient black to transp - get vignette effect */
     width: 100%;
 }
-<<<<<<< HEAD
+
 
 /*    error 500 page     */
 
@@ -96,8 +95,6 @@
   padding-bottom: 20px;
 
 }
-=======
->>>>>>> 8768fa753f42bbbc48a71a3dbc13d0baa504170d
 
 
 /* for article page */
@@ -276,10 +273,7 @@
     max-width: 900px;
   }
 } */
-<<<<<<< HEAD
 
-=======
->>>>>>> 8768fa753f42bbbc48a71a3dbc13d0baa504170d
 
 /*custom body color*/
 
@@ -440,7 +434,7 @@ a:hover {
 }
 
 /*modifying navbar*/
-=======
+
 .navbar {
     /* position: absolute; */
     position: relative;
