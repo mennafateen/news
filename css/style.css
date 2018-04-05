@@ -4,22 +4,92 @@
     src: url(../fonts/Lato-Semibold.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'latolight';
+    src: local('Lato');
+    src: url(../fonts/Lato-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'lato';
+    src: local('Lato');
+    src: url(../fonts/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'latothin';
+    src: local('Lato');
+    src: url(../fonts/Lato-Thin.ttf) format('truetype');
+}
+
 /*custom body color*/
 
 body {
     background: #f3f3f3;
+    font-family: 'lato';
 }
 
 .small-post {
     background-color: #fff;
     font-weight: bold;
+    text-align: justify;
+    text-align: left;
+    background-clip: content-box;
+}
+
+.vcenter {
+    display: flex;
+    align-items: center;
+    /*
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+*/
 }
 
 .big-post {
     background-color: #fff;
-    font-weight: bold;
-
+    /*    font-weight: bold;*/
+    text-align: left;
+    background-clip: content-box;
+    text-indent: inherit;
 }
+
+
+/*
+.post-text {
+    background-color: #fff;
+}
+*/
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #c93034;
+    text-decoration: underline;
+}
+
+.post-details {
+    font-family: 'latolight';
+    text-transform: uppercase;
+    font-size: 75%;
+    font-weight: bold;
+}
+
+.news-option {
+    font-family: 'latosemibold';
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 75%;
+}
+
+.news-detail {
+    text-align: justify;
+}
+
 
 .page-footer {
     border-top: 5px solid #c93034;
@@ -29,6 +99,10 @@ body {
     padding-top: 70px;
     padding-bottom: 70px;
     text-transform: uppercase;
+    left: 0px;
+    right: 0px;
+    position: relative;
+
 }
 
 .page-footer h5 {
@@ -45,6 +119,8 @@ body {
     position: relative;
 }
 
+/**/
+
 .caption {
     position: absolute;
     bottom: 5%;
@@ -54,24 +130,35 @@ body {
     font-family: "latosemibold";
 }
 
-/*this makes the carousel underneath the navigation bar*/
+/*make main carousel under main navbar*/
 
-.banner-container {
-    position: relative;
-
-}
-
-.carousel {
+.main-nav {
+    /*    background: rgb(0, 0, 0, 0.1);*/
     position: absolute;
-    top: 0;
+    width: 100%;
+    z-index: 999;
+    /*    background: none;*/
+    background: linear-gradient(rgb(0, 0, 0, 0.85) 30%, rgb(0, 0, 0, 0));
+
 }
 
-.heading {
+
+.main-carousel {
+    position: absolute;
+    top: 0px;
+}
+
+
+.section-heading {
     padding: 5px;
     background-color: #c93034;
     color: #fff;
     font-family: 'latosemibold';
     text-transform: uppercase;
+}
+
+.title {
+    font-weight: bold;
 }
 
 /*line seperator*/
@@ -80,17 +167,17 @@ body {
     border-top: 1px solid #8c8b8b;
 }
 
-/*modifying navbar*/
+.short-hr {
+    border-top: 1px solid #8c8b8b;
+    width: 75%;
 
-.navbar {
-    position: absolute;
-    top: 0px;
-    z-index: 10;
-    background: rgb(0, 0, 0, 0);
-    background: linear-gradient(rgb(0, 0, 0, 0.85) 30%, rgb(0, 0, 0, 0));
-    /*   ^ make navbar background transparent with gradient black to transp - get vignette effect */
-    width: 100%;
 }
+
+.hr-heading {
+    border-top: 1px solid #8c8b8b;
+}
+
+/*modifying navbar*/
 
 .navbar.transparent.navbar-inverse .navbar-inner {
     border-width: 0px;
@@ -134,11 +221,6 @@ body {
 
 /*responsive navbar icon color*/
 
-.navbar-light .navbar-toggler {
-    color: #fff;
-    border-color: rgba(0, 0, 0, 0.1);
-}
-
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
@@ -165,8 +247,7 @@ body {
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-    /*      line-height: 1*/
-    display: block;
+    line-height: 1 display: block;
     height: auto;
     max-width: 100%;
     line-height: 1;
@@ -360,17 +441,33 @@ body {
     background-color: #fff;
 }
 
+.caption-header {
+    font-family: 'latosemibold' !important;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.caption-header p {
+    font-size: 75%;
+    font-family: 'latothin';
+}
+
 .carousel-caption {
     position: absolute;
+    /*    right: 15px;*/
+    /*    bottom: 70px;*/
+    bottom: 10%;
+    /*    left: -50%;*/
+    left: 10%;
     right: 15%;
-    bottom: 20px;
-    left: 15%;
+    width: 33%;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
-    text-align: center;
+    text-align: left;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    font-family: 'latothin';
 }
 
 .carousel-caption .btn {
@@ -396,8 +493,10 @@ body {
         margin-right: -10px;
     }
     .carousel-caption {
+        /*
         right: 20%;
         left: 20%;
+*/
         padding-bottom: 30px;
     }
     .carousel-indicators {
