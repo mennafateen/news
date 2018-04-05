@@ -4,7 +4,6 @@
     src: url(../fonts/Lato-Semibold.ttf) format('truetype');
 }
 
-<<<<<<< HEAD
 /*    error 404 page     */
 
 /* for button */
@@ -12,7 +11,13 @@
 .white {color:#ffffff;}
 .btn.btn-square { /* make button square */
   border-radius: 0;
+  width: 23%;
+  height: 120%;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 650;
 }
+
 
 /*  for <p> tag */
 .pEdit {
@@ -43,7 +48,29 @@
     /*   ^ make navbar background transparent with gradient black to transp - get vignette effect */
     width: 100%;
 }
-=======
+
+/*    error 500 page     */
+
+.pEdit500 {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  line-height: 0.069;
+  padding-bottom: 20px;
+  padding-left: 37px;
+
+}
+
+.pEdit500Oops {
+  font-size: 60px;
+  font-weight: 990;
+  color: rgb(0, 0, 0);
+  line-height: 0.969;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+
+}
 
 
 /* for article page */
@@ -222,13 +249,11 @@
     max-width: 900px;
   }
 } */
->>>>>>> 56387d6421584a0ca16f05bd2d2b104679772c82
 
 
 /*custom body color*/
 
 body {
-
     background: #f3f3f3;
 }
 
