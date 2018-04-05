@@ -24,7 +24,7 @@
 
 =======
 
-/*    error 404 page     */
+/* error 404 page */
 
 /* for button */
 .red-background {background-color:rgb(201, 48, 52);}
@@ -413,6 +413,11 @@ a:hover {
     width: 100%;
 }
 
+.navbar-dark {
+  background-color:black;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
 
 .navbar.transparent.navbar-inverse .navbar-inner {
     border-width: 0px;
@@ -442,7 +447,8 @@ a:hover {
     font-weight: bold;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link,
+.navbar-dark {
     color: #fff;
     font-weight: bold;
 }
