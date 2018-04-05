@@ -22,7 +22,6 @@
     src: url(../fonts/Lato-Thin.ttf) format('truetype');
 }
 
-=======
 
 /* error 404 page */
 
@@ -31,6 +30,11 @@
 .white {color:#ffffff;}
 .btn.btn-square { /* make button square */
   border-radius: 0;
+  font-size: 15px;
+  font-weight: 550;
+  width: 120px;
+  height: 50px;
+  text-transform: uppercase;
 }
 
 /*  for p tag */
@@ -411,7 +415,7 @@ a:hover {
 }
 
 /*modifying navbar*/
-=======
+
 .navbar {
     /* position: absolute; */
     position: relative;
