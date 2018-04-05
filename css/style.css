@@ -4,8 +4,6 @@
     src: url(../fonts/Lato-Semibold.ttf) format('truetype');
 }
 
-/*    error 404 page     */
-
 @font-face {
     font-family: 'latolight';
     src: local('Lato');
@@ -24,25 +22,18 @@
     src: url(../fonts/Lato-Thin.ttf) format('truetype');
 }
 
-
+=======
 
 /* error 404 page */
-
 
 /* for button */
 .red-background {background-color:rgb(201, 48, 52);}
 .white {color:#ffffff;}
 .btn.btn-square { /* make button square */
   border-radius: 0;
-  width: 23%;
-  height: 120%;
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: 650;
 }
 
-
-/*  for <p> tag */
+/*  for p tag */
 .pEdit {
   font-size: 24px;
   color: rgb(0, 0, 0);
@@ -60,20 +51,7 @@
 
 }
 
-/* modifying navbar background color to black. navbar for errors pages. not working -_- */
-
-.navbarE {
-    position: relative;
-    top: 0px;
-    z-index: 10;
-    background: rgb(0, 0, 0);
-    /* background: linear-gradient(rgb(0, 0, 0, 0.85) 30%, rgb(0, 0, 0, 0)); */
-    /*   ^ make navbar background transparent with gradient black to transp - get vignette effect */
-    width: 100%;
-}
-
-
-/*    error 500 page     */
+/* error 500 page */
 
 .pEdit500 {
   font-size: 20px;
@@ -274,10 +252,10 @@
   }
 } */
 
-
 /*custom body color*/
 
 body {
+
     background: #f3f3f3;
     font-family: 'lato';
 }
@@ -390,13 +368,12 @@ a:hover {
 /*make main carousel under main navbar*/
 
 .main-nav {
-    /*    background: rgb(0, 0, 0, 0.1);*/
+    /* background: rgb(0, 0, 0, 0.1); */
     position: absolute;
     width: 100%;
     z-index: 999;
-    /*    background: none;*/
+    /* background: none; */
     background: linear-gradient(rgb(0, 0, 0, 0.85) 30%, rgb(0, 0, 0, 0));
-
 }
 
 
@@ -418,7 +395,7 @@ a:hover {
     font-weight: bold;
 }
 
-/*line seperator*/
+/* line seperator */
 
 .hrstyle {
     border-top: 1px solid #8c8b8b;
@@ -434,7 +411,7 @@ a:hover {
 }
 
 /*modifying navbar*/
-
+=======
 .navbar {
     /* position: absolute; */
     position: relative;
@@ -442,7 +419,7 @@ a:hover {
     z-index: 10;
     background: rgb(0, 0, 0);
     background: linear-gradient(rgb(0, 0, 0, 0.85) 30%, rgb(0, 0, 0, 0));
-    /*   ^ make navbar background transparent with gradient black to transp - get vignette effect */
+    /* ^ make navbar background transparent with gradient black to transp - get vignette effect */
     width: 100%;
 }
 
