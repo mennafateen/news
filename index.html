@@ -36,8 +36,8 @@
                         <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                        <input class="form-control mr-sm-2 transparent-search" type="text" placeholder=" &#xF002 Search">
+                        <!--                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>-->
                     </form>
                 </div>
             </div>
@@ -50,7 +50,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="/images/img1.jpg" alt="First slide">
+                    <img class="d-block w-100" src="images/img1.jpg" alt="First slide">
                     <div class="container">
                         <div class="carousel-caption caption-header">
                             Blandit Rutrum, Erat et Sagittis. Lorem Ipsum Dolor, Sit Amet A
@@ -61,14 +61,16 @@
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="images/img1.jpg" alt="Second slide">
-                    <div class="carousel-caption">
-                        caption
+                    <div class="carousel-caption caption-header">
+                        Blandit Rutrum, Erat et Sagittis. Lorem Ipsum Dolor, Sit Amet A
+                        <p>Blandit rutrum, erat et egestas ultricies, dolor tortor egestas enim, quiste rhoncus sem purus eu sapien. Curabitur a orci nec risus lacinia vehic. Lorem ipsum dolor adipcising elit. Erat egestan sagittis lorem aupo dolor sit ameta, auctor libero tempor...</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="images/img1.jpg" alt="Third slide">
-                    <div class="carousel-caption">
-                        caption
+                    <div class="carousel-caption caption-header">
+                        Blandit Rutrum, Erat et Sagittis. Lorem Ipsum Dolor, Sit Amet A
+                        <p>Blandit rutrum, erat et egestas ultricies, dolor tortor egestas enim, quiste rhoncus sem purus eu sapien. Curabitur a orci nec risus lacinia vehic. Lorem ipsum dolor adipcising elit. Erat egestan sagittis lorem aupo dolor sit ameta, auctor libero tempor...</p>
                     </div>
                 </div>
             </div>
@@ -107,13 +109,11 @@
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col">
-                                <p class="post-details">Amruismail</p>
+                            <div class="col my-auto post-details">
+                                <img src="images/avatar.png" class="img-fluid post-details-img "> Amruismail
                             </div>
-                            <div class="col">
-                                <p class="post-details">25 mins ago</p>
-                            </div>
-                            <div class="col">
+                            <div class="col my-auto post-details">
+                                <img src="images/time.png" class="img-fluid post-details-img"> 25 mins ago
                             </div>
                             <div class="col">
                                 <a class="post-details" href="#">Read more</a>
@@ -154,15 +154,18 @@
                 </div>
 
             </div>
+
+
             <div class="row">
-                <div class="col">
-                    <p class="news-option">More news on #Egypt</p>
+                <div class="col news-option">
+                    More news on #Egypt
                 </div>
-                <div class="col">
-                    <p class="news-option">Following</p>
+                <div class="col news-option">
+                    <img src="images/star.png" class="img-fluid"> Following
                 </div>
-                <div class="col">
-                    <a class="news-option" href="#">Get Email updates</a>
+                <div class="col news-option">
+                    <img src="images/mail.png" class="img-fluid">
+                    <a href="#">Get Email updates</a>
                 </div>
                 <div class="col">
                 </div>
@@ -177,7 +180,16 @@
     <div id="events" class="container">
         <h5><span class="section-heading">Events </span></h5>
         <hr class="hrstyle">
+        <div class="img-wrapper">
+            <img class="img-fluid" src="images/event.jpg">
+            <div class="img-overlay">
+                <button class="btn btn-outline-primary event-btn">Read More</button>
+            </div>
+        </div>
+        <!--
         <img src="images/event.jpg" class="img-fluid">
+        <button class="btn btn-outline-primary event-btn">Read More</button>
+-->
     </div>
     <br><br><br>
     <div id="photos" class="container">
@@ -191,22 +203,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="/images/bigpost.jpg" alt="First slide">
-                    <div class="carousel-caption">
-                        caption
-                    </div>
+                    <img class="d-block w-100" src="images/bigpost.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="images/bigpost.jpg" alt="Second slide">
-                    <div class="carousel-caption">
-                        caption
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="images/bigpost.jpg" alt="Third slide">
-                    <div class="carousel-caption">
-                        caption
-                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#photos-carousel" role="button" data-slide="prev">
@@ -243,13 +246,11 @@
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col">
-                                <p class="post-details">Amruismail</p>
+                            <div class="col my-auto post-details">
+                                <img src="images/avatar.png" class="img-fluid post-details-img "> Amruismail
                             </div>
-                            <div class="col">
-                                <p class="post-details">25 mins ago</p>
-                            </div>
-                            <div class="col">
+                            <div class="col my-auto post-details">
+                                <img src="images/time.png" class="img-fluid post-details-img"> 25 mins ago
                             </div>
                             <div class="col">
                                 <a class="post-details" href="#">Read more</a>
@@ -275,13 +276,11 @@
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col">
-                                <p class="post-details">Amruismail</p>
+                            <div class="col my-auto post-details">
+                                <img src="images/avatar.png" class="img-fluid post-details-img "> Amruismail
                             </div>
-                            <div class="col">
-                                <p class="post-details">25 mins ago</p>
-                            </div>
-                            <div class="col">
+                            <div class="col my-auto post-details">
+                                <img src="images/time.png" class="img-fluid post-details-img"> 25 mins ago
                             </div>
                             <div class="col">
                                 <a class="post-details" href="#">Read more</a>
@@ -313,13 +312,11 @@
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col">
-                                <p class="post-details">Amruismail</p>
+                            <div class="col my-auto post-details">
+                                <img src="images/avatar.png" class="img-fluid post-details-img "> Amruismail
                             </div>
-                            <div class="col">
-                                <p class="post-details">25 mins ago</p>
-                            </div>
-                            <div class="col">
+                            <div class="col my-auto post-details">
+                                <img src="images/time.png" class="img-fluid post-details-img"> 25 mins ago
                             </div>
                             <div class="col">
                                 <a class="post-details" href="#">Read more</a>
@@ -345,13 +342,11 @@
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col">
-                                <p class="post-details">Amruismail</p>
+                            <div class="col my-auto post-details">
+                                <img src="images/avatar.png" class="img-fluid post-details-img "> Amruismail
                             </div>
-                            <div class="col">
-                                <p class="post-details">25 mins ago</p>
-                            </div>
-                            <div class="col">
+                            <div class="col my-auto post-details">
+                                <img src="images/time.png" class="img-fluid post-details-img"> 25 mins ago
                             </div>
                             <div class="col">
                                 <a class="post-details" href="#">Read more</a>
@@ -359,14 +354,28 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <br>
+                            <button class="btn btn-primary news-btn">See More</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
     <br><br><br>
-    <div id="call to action">
 
+    <div class="img-wrapper">
+        <img class="img-fluid" src="images/call.jpg">
+        <div class="call-img-overlay">
+            <button class="btn btn-outline-primary event-btn">Read More</button>
+        </div>
     </div>
+
+    <br><br><br>
 
     <div id="ad-content" class="container">
         <h5><span class="section-heading">Ad Content</span></h5>
