@@ -264,12 +264,23 @@
   }
 } */
 
+/*changed container width */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
 /*custom body color*/
 
 body {
 
     background: #f3f3f3;
     font-family: 'lato';
+    /*    to go with new container size*/
+    font-size: 80%;
+
 }
 
 .small-post {
@@ -286,17 +297,6 @@ body {
     font-family: 'lato', FontAwesome;
 }
 
-
-.vcenter {
-    display: flex;
-    align-items: center;
-    /*
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-*/
-}
-
 .big-post {
     background-color: #fff;
     /*    font-weight: bold;*/
@@ -304,13 +304,6 @@ body {
     background-clip: content-box;
     text-indent: inherit;
 }
-
-
-/*
-.post-text {
-    background-color: #fff;
-}
-*/
 
 a {
     text-decoration: none;
@@ -331,6 +324,8 @@ a:hover {
     background-color: #c93034 !important;
 }
 
+
+/* for buttons to go over images */
 
 .img-wrapper {
     position: relative;
@@ -371,6 +366,8 @@ a:hover {
 
 }
 
+/*css of post details? lol */
+
 .post-details {
     font-family: 'latolight';
     text-transform: uppercase;
@@ -385,6 +382,7 @@ a:hover {
     width: 10px !important;
 }
 
+
 .news-option {
     font-family: 'latosemibold';
     text-transform: uppercase;
@@ -395,7 +393,6 @@ a:hover {
 .news-detail {
     text-align: justify;
 }
-
 
 .page-footer {
     border-top: 5px solid #c93034;
@@ -796,6 +793,9 @@ a:hover {
     background-color: #fff;
 }
 
+
+/*custom caption!*/
+
 .caption-header {
     font-family: 'latosemibold' !important;
     font-size: 150%;
@@ -813,9 +813,9 @@ a:hover {
     /*    bottom: 70px;*/
     bottom: 10%;
     /*    left: -50%;*/
-    left: 10%;
+    left: 15%;
     right: 15%;
-    width: 33%;
+    width: 39%;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
