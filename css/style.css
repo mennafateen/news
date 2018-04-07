@@ -326,6 +326,11 @@ a {
     color: #000;
 }
 
+.subscribe-link a {
+    text-decoration: none;
+    color: white;
+}
+
 a:hover {
     color: #c93034;
     text-decoration: underline;
@@ -955,10 +960,104 @@ a:hover {
         margin-right: -10px;
     }
     .carousel-caption {
-        /*
-        right: 20%;
-        left: 20%;
-*/
+        padding-bottom: 30px;
+    }
+    .carousel-indicators {
+        bottom: 20px;
+    }
+}
+
+/* pagination stuff */
+
+.pagination {
+    background-color: #f3f3f3;
+    color: #8a8a8a;
+    padding: 10px;
+}
+
+.search-results .pagination > li > a,
+.search-results .pagination > li > span {
+    border: 1px solid #f3f3f3;
+}
+
+.pagination > li.active > a,
+.pagination .page-item a:hover {
+    background: #f3f3f3;
+    color: #5b5b5b;
+}
+
+.pagination .page-item a {
+    background: #f3f3f3;
+    color: #8a8a8a;
+}
+
+.prev-next-span {
+    display: inline-block;
+    width: 80px;
+    font-size: 17px;
+    font-weight: lighter;
+    padding: 0px;
+}
+
+.page-num-span {
+    display: inline-block;
+    width: 20px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.search-body {
+    font-size: 15px;
+    font-family: "latothin";
+    color: #5b5b5b;
+    line-height: 1.2;
+    text-align: justify;
+    font-weight: 100;
+}
+
+.carousel-caption-white {
+    background: #ffffff;
+    position: absolute;
+    color: black;
+    bottom: 0%;
+    left: 0%;
+    right: 15%;
+    width: 15%;
+    height: 45%;
+    z-index: 10;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    text-shadow: none;
+    font-family: 'latothin';
+    font-weight: 900;
+}
+
+.carousel-caption-white .btn {
+    text-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-prev,
+    .carousel-control .icon-next {
+        width: 30px;
+        height: 30px;
+        margin-top: -10px;
+        font-size: 30px;
+    }
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .icon-prev {
+        margin-left: -10px;
+    }
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next {
+        margin-right: -10px;
+    }
+    .carousel-caption-white {
         padding-bottom: 30px;
     }
     .carousel-indicators {
