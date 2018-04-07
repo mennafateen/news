@@ -16,7 +16,7 @@
     <div id="header" class="banner-container">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" /></a>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""/></a>
                 <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item active"><a class="nav-link" href="#">Style</a></li>
@@ -169,19 +169,22 @@
                     </ul>
                 </div>
             </div>
+
             <br><br><br>
 
             <div class="row">
-                <div class="col-md-3">
-                    <img src="images/logo.png" alt="" />
+                <div class="col-md-2">
+                  <div class = "edit-logo">
+                      <img src="images/logo.png" class = "img-fluid"/>
+                  </div>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-md-4 offset-md-1">
                     <h5>Find <em>NEWSEXTRA</em> around the world</h5>
                     <h6>Select country from the list</h6><br>
                     <select>
-                  <option value="Egypt"><a href="#">EGYPT</a></option>
-                  <option value="Saudi Arabia"><a href="#">SAUDI ARABIA</a></option>
+                  <option value ="Egypt"><a href="#">EGYPT</a></option>
+                  <option value ="Saudi Arabia"><a href="#">SAUDI ARABIA</a></option>
               </select>
                 </div>
 
@@ -192,13 +195,13 @@
                     <div class="icons"><br>
                         <div class="row">
                             <div class="col-1">
-                                <a class="fa fa-facebook" href="#"></a>
+                                <a class="fa fa-facebook" href="#"> </a>
                             </div>
                             <div class="col-1">
-                                <a class="fa fa-twitter" href="#"></a>
+                                <a class="fa fa-twitter" href="#"> </a>
                             </div>
                             <div class="col-1">
-                                <a class="fa fa-linkedin" href="#"></a>
+                                <a class="fa fa-linkedin" href="#"> </a>
                             </div>
                         </div>
                     </div>
@@ -209,7 +212,7 @@
                     <h6>Sign up for our newsletter</h6><br>
                     <form>
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="EMAIL ADDRESS">
+                            <input type="text" class="form-control" placeholder="Enter Email Address">
                             <button class="btn btn-secondary" type="submit" formaction="#">
                       <img src="images/next.png" class="img-icon"/>
                     </button>
@@ -219,6 +222,8 @@
             </div>
         </div>
     </footer>
+
     <!-- footer end -->
+
 </body>
 </html>
